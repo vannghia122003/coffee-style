@@ -19,9 +19,14 @@ module.exports = {
                     '0%': { transform: 'translateY(-100%)' },
                     '100%': { transform: 'translateY(0)' },
                 },
+                fadeIn: {
+                    from: { opacity: 0, transform: 'translate(-50%, 12px)' },
+                    to: { opacity: 1, transform: 'translate(-50%, 0)' }
+                }
             },
             animation: {
-                slideDown: 'slideDown .4s ease-in-out',
+                slideDown: 'slideDown .5s ease-in-out',
+                fadeIn: 'fadeIn .5s ease-in-out',
             },
             backgroundImage: {
                 'slider-bg': 'url("./img/slider-bg.jpg")'
